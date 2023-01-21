@@ -1,8 +1,8 @@
 class Solution {
     public int evalRPN(String[] tokens) {
         int result = 0;
-        int rightNumber = Integer.MAX_VALUE;
-        int leftNumber = Integer.MAX_VALUE;
+        int rightNumber = 0;
+        int leftNumber = 0;
         Stack<Integer> numbers = new Stack<>();
         for(String current : tokens){
             switch(current){
